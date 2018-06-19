@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.cd.taobao.fragment.WeiTaoFindFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/findtabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabTextColor="#FF7E7B7B"
+        app:tabSelectedTextColor="#FF5C01"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#FFE8E5E5"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/findViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>
